@@ -24,3 +24,6 @@ BATCH_SIZE = try_parse_int(os.environ.get("BATCH_SIZE")) or 20
 MQTT_BROKER_HOST = os.environ.get("MQTT_BROKER_HOST") or "localhost"
 MQTT_BROKER_PORT = try_parse_int(os.environ.get("MQTT_BROKER_PORT")) or 1883
 MQTT_TOPIC = os.environ.get("MQTT_TOPIC") or "processed_agent_data_topic"
+
+SUPABASE_URL = os.environ.get("https://dsigdlzzlhpugdcehydn.supabase.co")
+SUPABASE_KEY = os.environ.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRzaWdkbHp6bGhwdWdkY2VoeWRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA3Mjc4NzksImV4cCI6MjAyNjMwMzg3OX0.bH_IQeFlJe5H2D6fOcX6nID3fUkbCFVGT6Yj5Jc9j5s")
